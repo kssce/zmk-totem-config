@@ -129,10 +129,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &kp F7  &kp C_VOLUME_DOWN  &kp K_MUTE  &kp C_VOLUME_UP  &kp F9    &none            &none                 &none  &none                  &none
-       &none   &none              &none       &none            &none     &kp HOME         &kp END               &none  &kp PAGE_UP            &kp RA(PAGE_DOWN)
-&none  &none   &none              &none       &none            &none     &kp LC(LS(TAB))  &kp LG(LEFT_BRACKET)  &none  &kp LG(RIGHT_BRACKET)  &kp LC(TAB)        &none
-                                  &kp F1      &kp F2           &kp F3    &none            &none                 &none
+       &kp F7  &kp C_VOLUME_DOWN  &kp K_MUTE  &kp C_VOLUME_UP  &kp F9    &bt BT_SEL 0     &bt BT_SEL 1          &bt BT_SEL 2  &bt BT_SEL 3           &bt BT_SEL 4
+       &none   &none              &none       &none            &none     &kp HOME         &kp END               &none         &kp PAGE_UP            &kp RA(PAGE_DOWN)
+&none  &none   &none              &none       &none            &none     &kp LC(LS(TAB))  &kp LG(LEFT_BRACKET)  &none         &kp LG(RIGHT_BRACKET)  &kp LC(TAB)        &bt BT_CLR
+                                  &kp F1      &kp F2           &kp F3    &kp LG(LS(T))    &none                 &kp LG(W)
             >;
         };
 
