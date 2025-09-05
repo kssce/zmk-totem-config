@@ -103,10 +103,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4      &kp NUMBER_5            &kp NUMBER_6  &kp N7         &kp N8   &kp N9     &kp NUMBER_0
-       &kp GRAVE     &kp MINUS     &kp EQUAL     &kp LEFT_BRACKET  &kp RIGHT_BRACKET       &kp LEFT      &kp DOWN       &kp UP   &kp RIGHT  &kp SQT
-&none  &none         &none         &none         &none             &none                   &kp DELETE    &kp BACKSPACE  &kp ESC  &kp TAB    &kp BACKSLASH  &none
-                                   &kp LALT      &kp LGUI          &mt LEFT_SHIFT SPACE    &none         &none          &none
+           &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4      &kp NUMBER_5            &kp NUMBER_6  &kp N7         &kp N8   &kp N9     &kp NUMBER_0
+           &kp GRAVE     &kp MINUS     &kp EQUAL     &kp LEFT_BRACKET  &kp RIGHT_BRACKET       &kp LEFT      &kp DOWN       &kp UP   &kp RIGHT  &kp SQT
+&kp LCTRL  &none         &none         &none         &none             &none                   &kp DELETE    &kp BACKSPACE  &kp ESC  &kp TAB    &kp BACKSLASH  &none
+                                       &kp LALT      &kp LGUI          &mt LEFT_SHIFT SPACE    &none         &none          &none
             >;
         };
 
