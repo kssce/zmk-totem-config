@@ -80,7 +80,7 @@
                   &kp Q  &kp W  &kp E     &kp R     &kp T                   &kp Y        &kp U  &kp I        &kp O    &kp P
                   &kp A  &kp S  &kp D     &kp F     &kp G                   &kp H        &kp J  &kp K        &kp L    &kp SEMICOLON
 &kp LEFT_CONTROL  &kp Z  &kp X  &kp C     &kp V     &kp B                   &kp N        &kp M  &lt 2 COMMA  &kp DOT  &kp FSLH       &none
-                                &kp LALT  &kp LGUI  &mt LEFT_SHIFT SPACE    &lt 3 ENTER  &to 1  &none
+                                &kp LALT  &kp LGUI  &mt LEFT_SHIFT SPACE    &lt 3 ENTER  &sl 1  &none
             >;
         };
 
