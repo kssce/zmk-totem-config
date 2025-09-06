@@ -77,10 +77,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                  &kp Q  &kp W  &kp E     &kp R     &kp T                   &kp Y        &kp U  &kp I        &kp O    &kp P
-                  &kp A  &kp S  &kp D     &kp F     &kp G                   &kp H        &kp J  &kp K        &kp L    &kp SEMICOLON
-&kp LEFT_CONTROL  &kp Z  &kp X  &kp C     &kp V     &kp B                   &kp N        &kp M  &lt 2 COMMA  &kp DOT  &kp FSLH       &none
-                                &kp LALT  &kp LGUI  &mt LEFT_SHIFT SPACE    &lt 3 ENTER  &sl 1  &none
+                  &kp Q       &kp W  &kp E     &kp R      &kp T        &kp Y        &kp U  &kp I        &kp O    &kp P
+                  &kp A       &kp S  &kp D     &kp F      &kp G        &kp H        &kp J  &kp K        &kp L    &kp SEMICOLON
+&kp LEFT_CONTROL  &mt LALT Z  &kp X  &kp C     &kp V      &kp B        &kp N        &kp M  &lt 2 COMMA  &kp DOT  &kp FSLH       &none
+                                     &kp LGUI  &kp LSHFT  &kp SPACE    &lt 3 ENTER  &sl 1  &none
             >;
         };
 
@@ -103,10 +103,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-           &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4      &kp NUMBER_5            &kp NUMBER_6  &kp N7         &kp N8   &kp N9     &kp NUMBER_0
-           &kp GRAVE     &kp MINUS     &kp EQUAL     &kp LEFT_BRACKET  &kp RIGHT_BRACKET       &kp LEFT      &kp DOWN       &kp UP   &kp RIGHT  &kp SQT
-&kp LCTRL  &none         &none         &none         &none             &none                   &kp DELETE    &kp BACKSPACE  &kp ESC  &kp TAB    &kp BACKSLASH  &none
-                                       &kp LALT      &kp LGUI          &mt LEFT_SHIFT SPACE    &none         &none          &none
+           &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4      &kp NUMBER_5         &kp NUMBER_6  &kp N7         &kp N8   &kp N9     &kp NUMBER_0
+           &kp GRAVE     &kp MINUS     &kp EQUAL     &kp LEFT_BRACKET  &kp RIGHT_BRACKET    &kp LEFT      &kp DOWN       &kp UP   &kp RIGHT  &kp SQT
+&kp LCTRL  &kp LALT      &none         &none         &none             &none                &kp DELETE    &kp BACKSPACE  &kp ESC  &kp TAB    &kp BACKSLASH  &none
+                                       &kp LGUI      &kp LSHFT         &kp SPACE            &none         &none          &none
             >;
         };
 
