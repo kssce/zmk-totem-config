@@ -19,6 +19,14 @@
 #define NAV  1
 #define SYM  2
 #define ADJ  3
+#define U_MOUSE_MOVE_MAX 1400 // 250907 21:21 내가 추가
+
+
+
+&mmv { // 250907 21:21 내가 추가
+  time-to-max-speed-ms = <300>;  // 최대 속도에 도달하는 시간 (기본 500ms)
+  acceleration-exponent = <2>; // 가속 곡선 형태 (값이 클수록 출발 속도 느리고, 후반 가속 빨라짐)
+};
 
 &mt {
     quick-tap-ms = <100>;
@@ -157,7 +165,7 @@
             bindings = <
        &none  &none  &none  &none  &none    &msc MOVE_X(-20)   &msc MOVE_Y(-20)  &msc MOVE_Y(20)    &msc MOVE_X(20)   &mkp MCLK
        &none  &none  &none  &none  &none    &mmv MOVE_LEFT     &mmv MOVE_DOWN    &mmv MOVE_UP       &mmv MOVE_RIGHT   &mkp LCLK
-&none  &none  &none  &none  &none  &none    &mmv MOVE_X(-600)  &mmv MOVE_Y(600)  &mmv MOVE_Y(-600)  &mmv MOVE_X(600)  &mkp RCLK  &none
+&none  &none  &none  &none  &none  &none    &mmv MOVE_X(-U_MOUSE_MOVE_MAX)  &mmv MOVE_Y(U_MOUSE_MOVE_MAX)  &mmv MOVE_Y(-U_MOUSE_MOVE_MAX)  &mmv MOVE_X(U_MOUSE_MOVE_MAX)  &mkp RCLK  &none
                      &none  &none  &none    &none              &none             &none
             >;
         };
