@@ -22,6 +22,9 @@
 #define U_MOUSE_MOVE_MIN 800
 #define U_MOUSE_MOVE_NOM 1500
 #define U_MOUSE_MOVE_MAX 3000
+#define U_SCRL_MOVE_MIN 30
+#define U_SCRL_MOVE_NOM 60
+#define U_SCRL_MOVE_MAX 200
 
 &mmv {
     time-to-max-speed-ms = <300>;  // 최대 속도에 도달하는 시간 (기본 500ms)
@@ -172,10 +175,10 @@
 
         scrl_layer {
             bindings = <
-        &none   &trans  &trans  &trans  &trans    &trans            &trans           &trans            &trans           &trans
-        &trans  &trans  &trans  &trans  &trans    &msc MOVE_X(-20)  &msc MOVE_Y(20)  &msc MOVE_Y(-20)  &msc MOVE_X(20)  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans            &trans           &trans            &trans           &trans  &trans
-                        &trans  &trans  &trans    &trans            &trans           &trans
+           &none     &none  &none  &none  &none    &msc MOVE_X(-U_SCRL_MOVE_MAX)  &msc MOVE_Y(U_SCRL_MOVE_MAX)  &msc MOVE_Y(-U_SCRL_MOVE_MAX)  &msc MOVE_X(U_SCRL_MOVE_MAX)  &trans
+           &none     &none  &none  &none  &none    &msc MOVE_X(-U_SCRL_MOVE_NOM)  &msc MOVE_Y(U_SCRL_MOVE_NOM)  &msc MOVE_Y(-U_SCRL_MOVE_NOM)  &msc MOVE_X(U_SCRL_MOVE_NOM)  &trans
+&kp LCTRL  &kp LALT  &none  &none  &none  &none    &msc MOVE_X(-U_SCRL_MOVE_MIN)  &msc MOVE_Y(U_SCRL_MOVE_MIN)  &msc MOVE_Y(-U_SCRL_MOVE_MIN)  &msc MOVE_X(U_SCRL_MOVE_MIN)  &trans  &trans
+                 &kp LGUI   &kp LSHFT  &none       &none            &none           &trans
             >;
         };
     };
