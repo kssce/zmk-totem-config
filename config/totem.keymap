@@ -175,9 +175,9 @@
 
         scrl_layer {
             bindings = <
-           &none     &none  &none  &none  &none    &msc MOVE_X(-U_SCRL_MOVE_MAX)  &msc MOVE_Y(U_SCRL_MOVE_MAX)  &msc MOVE_Y(-U_SCRL_MOVE_MAX)  &msc MOVE_X(U_SCRL_MOVE_MAX)  &trans
-           &none     &none  &none  &none  &none    &msc MOVE_X(-U_SCRL_MOVE_NOM)  &msc MOVE_Y(U_SCRL_MOVE_NOM)  &msc MOVE_Y(-U_SCRL_MOVE_NOM)  &msc MOVE_X(U_SCRL_MOVE_NOM)  &trans
-&kp LCTRL  &kp LALT  &none  &none  &none  &none    &msc MOVE_X(-U_SCRL_MOVE_MIN)  &msc MOVE_Y(U_SCRL_MOVE_MIN)  &msc MOVE_Y(-U_SCRL_MOVE_MIN)  &msc MOVE_X(U_SCRL_MOVE_MIN)  &trans  &trans
+           &none     &none  &none  &none  &none    &msc MOVE_X(-U_SCRL_MOVE_MAX)  &msc MOVE_Y(-U_SCRL_MOVE_MAX)  &msc MOVE_Y(U_SCRL_MOVE_MAX)  &msc MOVE_X(U_SCRL_MOVE_MAX)  &trans
+           &none     &none  &none  &none  &none    &msc MOVE_X(-U_SCRL_MOVE_NOM)  &msc MOVE_Y(-U_SCRL_MOVE_NOM)  &msc MOVE_Y(U_SCRL_MOVE_NOM)  &msc MOVE_X(U_SCRL_MOVE_NOM)  &trans
+&kp LCTRL  &kp LALT  &none  &none  &none  &none    &msc MOVE_X(-U_SCRL_MOVE_MIN)  &msc MOVE_Y(-U_SCRL_MOVE_MIN)  &msc MOVE_Y(U_SCRL_MOVE_MIN)  &msc MOVE_X(U_SCRL_MOVE_MIN)  &trans  &trans
                  &kp LGUI   &kp LSHFT  &none       &none            &none           &trans
             >;
         };
