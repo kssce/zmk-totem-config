@@ -23,11 +23,9 @@
 #define U_MOUSE_MOVE_NOM 1500
 #define U_MOUSE_MOVE_MAX 3000
 
-
-
-&mmv { // 250907 21:21 내가 추가
-  time-to-max-speed-ms = <300>;  // 최대 속도에 도달하는 시간 (기본 500ms)
-  acceleration-exponent = <2>; // 가속 곡선 형태 (값이 클수록 출발 속도 느리고, 후반 가속 빨라짐)
+&mmv {
+    time-to-max-speed-ms = <300>;  // 최대 속도에 도달하는 시간 (기본 500ms)
+    acceleration-exponent = <2>; // 가속 곡선 형태 (값이 클수록 출발 속도 느리고, 후반 가속 빨라짐)
 };
 
 &mt {
@@ -90,7 +88,7 @@
                   &kp Q       &kp W  &kp E     &kp R      &kp T        &kp Y        &kp U  &kp I        &kp O    &kp P
                   &kp A       &kp S  &kp D     &kp F      &kp G        &kp H        &kp J  &kp K        &kp L    &kp SEMICOLON
 &kp LEFT_CONTROL  &mt LALT Z  &kp X  &kp C     &kp V      &kp B        &kp N        &kp M  &lt 2 COMMA  &kp DOT  &kp FSLH       &none
-                                     &kp LGUI  &kp LSHFT  &kp SPACE    &lt 3 ENTER  &sl 1  &none
+                                     &kp LGUI  &kp LSHFT  &kp SPACE    &lt 3 ENTER  &sl 1  &sl 4
             >;
         };
 
@@ -165,10 +163,19 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-           &none     &none  &none      &none      &none           &mmv MOVE_X(-U_MOUSE_MOVE_MAX)  &mmv MOVE_Y(U_MOUSE_MOVE_MAX)  &mmv MOVE_Y(-U_MOUSE_MOVE_MAX)  &mmv MOVE_X(U_MOUSE_MOVE_MAX)  &mkp LCLK
-           &none     &none  &mkp MCLK  &mkp LCLK  &mkp RCLK       &mmv MOVE_X(-U_MOUSE_MOVE_NOM)  &mmv MOVE_Y(U_MOUSE_MOVE_NOM)  &mmv MOVE_Y(-U_MOUSE_MOVE_NOM)  &mmv MOVE_X(U_MOUSE_MOVE_NOM)  &mkp LCLK
-&kp LCTRL  &kp LALT  &none  &none      &none      &none           &mmv MOVE_X(-U_MOUSE_MOVE_MIN)  &mmv MOVE_Y(U_MOUSE_MOVE_MIN)  &mmv MOVE_Y(-U_MOUSE_MOVE_MIN)  &mmv MOVE_X(U_MOUSE_MOVE_MIN)  &mkp LCLK  &mkp RCLK
-                &kp LGUI  &kp LSHFT   &none             &none              &none             &none
+           &none     &none  &none      &none      &none        &mmv MOVE_X(-U_MOUSE_MOVE_MAX)  &mmv MOVE_Y(U_MOUSE_MOVE_MAX)  &mmv MOVE_Y(-U_MOUSE_MOVE_MAX)  &mmv MOVE_X(U_MOUSE_MOVE_MAX)  &mkp LCLK
+           &none     &none  &mkp MCLK  &mkp LCLK  &mkp RCLK    &mmv MOVE_X(-U_MOUSE_MOVE_NOM)  &mmv MOVE_Y(U_MOUSE_MOVE_NOM)  &mmv MOVE_Y(-U_MOUSE_MOVE_NOM)  &mmv MOVE_X(U_MOUSE_MOVE_NOM)  &mkp LCLK
+&kp LCTRL  &kp LALT  &none  &none      &none      &none        &mmv MOVE_X(-U_MOUSE_MOVE_MIN)  &mmv MOVE_Y(U_MOUSE_MOVE_MIN)  &mmv MOVE_Y(-U_MOUSE_MOVE_MIN)  &mmv MOVE_X(U_MOUSE_MOVE_MIN)  &mkp LCLK  &mkp RCLK
+                            &kp LGUI   &kp LSHFT  &none        &none                           &none                          &none
+            >;
+        };
+
+        scrl_layer {
+            bindings = <
+        &none   &trans  &trans  &trans  &trans    &trans            &trans           &trans            &trans           &trans
+        &trans  &trans  &trans  &trans  &trans    &msc MOVE_X(-20)  &msc MOVE_Y(20)  &msc MOVE_Y(-20)  &msc MOVE_X(20)  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans            &trans           &trans            &trans           &trans  &trans
+                        &trans  &trans  &trans    &trans            &trans           &trans
             >;
         };
     };
